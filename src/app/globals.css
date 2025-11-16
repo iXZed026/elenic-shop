@@ -10,8 +10,6 @@
 }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
@@ -30,6 +28,7 @@ body {
 }
 
 .btn {
+  color: rgba(0, 0, 0, 0.895);
   font-weight: bold;
   font-size: small;
   padding: 4px 12px;
@@ -64,6 +63,11 @@ body {
   background-color: var(--gray-color);
   border-radius: 15px;
   padding: 25px;
+}
+
+.icon {
+  font-size: larger;
+  cursor: pointer
 }
 
 
