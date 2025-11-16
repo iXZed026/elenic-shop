@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --body-bg: #101118;
+  --page-bg: linear-gradient(to right, rgba(91, 91, 255, 0.055), var(--body-bg), rgba(91, 91, 255, 0.055));
+  --green-color: #01FEA4;
+  --text-black-color: rgba(0, 0, 0, 0.8);
+  --text-white-color: rgb(195, 195, 195);
+  --gray-color: #1A1C27;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  background-color: var(--body-bg);
+  min-height: 100vh;
+  color: var(--text-white-color);
+
+}
+
+.page {
+  max-width: 100%;
+  min-height: 100vh;
+  background: var(--page-bg);
+}
+
+.btn {
+  font-weight: bold;
+  font-size: small;
+  padding: 4px 12px;
+  background-color: var(--green-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  transition: 0.35s;
+}
+
+.btn-outline {
+  font-weight: bold;
+  font-size: small;
+  padding: 8px 15px;
+  background-color: transparent;
+  outline: 1px solid var(--green-color);
+  color: var(--green-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.btn-outline:hover {
+  opacity: 0.5;
+  transition: 0.35s;
+}
+
+.box {
+  background-color: var(--gray-color);
+  border-radius: 15px;
+  padding: 25px;
+}
+
+
+/* UTILITIES */
+@layer utilities {
+
+  .start-screen {
+    @apply flex justify-start items-center;
+  }
+
+  .center-screen {
+    @apply flex justify-center items-center;
+  }
+
+  .between-screen {
+    @apply flex justify-between items-center;
+  }
+
+  .end-screen {
+    @apply flex justify-end items-center;
+  }
+
+}
