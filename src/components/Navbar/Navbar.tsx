@@ -7,7 +7,7 @@ import { FaCartShopping } from "react-icons/fa6";
 
 function Navbar() {
   return (
-    <header className='bg-[#13141A] sticky top-0 border-b-[1px] border-b-[var(--green-color)]'>
+    <header className='bg-[#13141A] sticky top-0 '>
       <Container>
         <div className='between-screen py-4'>
           <div className="logo">
