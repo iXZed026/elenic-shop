@@ -2,15 +2,11 @@
 
 :root {
   --body-bg: #101118;
-  --page-bg: linear-gradient(to right, rgba(91, 91, 255, 0.055), var(--body-bg), rgba(91, 91, 255, 0.055));
+  --page-bg: linear-gradient(to right, rgba(91, 91, 255, 0.064), var(--body-bg), rgba(91, 91, 255, 0.064));
   --green-color: #01FEA4;
   --text-black-color: rgba(0, 0, 0, 0.8);
   --text-white-color: rgb(195, 195, 195);
   --gray-color: #1A1C27;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
@@ -31,7 +27,7 @@ body {
   color: rgba(0, 0, 0, 0.895);
   font-weight: bold;
   font-size: small;
-  padding: 4px 12px;
+  padding: 8px 15px;
   background-color: var(--green-color);
   border-radius: 8px;
   cursor: pointer;
